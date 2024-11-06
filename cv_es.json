@@ -1,0 +1,188 @@
+{
+  "basics": {
+    "fullname": "Jose Alejandro Ponce Maya",
+    "name": "Jose Alejandro Ponce Maya",
+    "label": "Desarrollador de software",
+    "image": "/me.jpg",
+    "email": "joseal.pma@gmail.com",
+    "phone": "+528133957004",
+    "url": "",
+    "summary": "+3 años de experiencia como Desarrollador de software. Actualmente me encuentro enfocado en el desarrollo de tecnologías web. Mi experiencia en programación y resolución de problemas me permite ofrecer resultados de calidad y garantizar el éxito de los proyectos. Experiencia trabajando con metodologías ágiles como Scrum y utilizando herramientas de colaboración como Jira y Slack.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Monterrey",
+      "countryCode": "MX",
+      "region": "Mexico"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "joseponcema",
+        "url": "https://linkedin.com/in/joseponcema"
+      },
+      {
+        "network": "GitHub",
+        "username": "josealpma",
+        "url": "https://github.com/josealpma"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Innatos Systems Group",
+      "position": "Desarrollador de Software",
+      "url": "https://innatos.com.mx/",
+      "startDate": "2021-04-01",
+      "endDate": null,
+      "summary": "Desarrollo integral de aplicaciones web y móviles en ASP.NET, .NET Core, Ionic, y Angular, con gestión de bases de datos SQL Server.",
+      "highlights": [
+        "Responsable de desarrollo e implementación de soluciones completas en ASP.NET y .NET Core, asegurando estabilidad y escalabilidad de las aplicaciones.",
+        "Mejoré la eficiencia de la base de datos en un 30% mediante optimización de consultas SQL."
+      ]
+    },
+    {
+      "name": "EISEI Innovation",
+      "position": "Desarrollador de Software Jr.",
+      "url": "https://www.eisei.net.mx/",
+      "startDate": "2020-06-01",
+      "endDate": "2020-12-01",
+      "summary": "Desarrollo de aplicaciones web MVC con PHP y Yii 2.0, gestión de bases de datos MySQL, mantenimiento de proyectos ERP, uso de GIT para control de versiones.",
+      "highlights": [
+        "Contribuí al desarrollo y mantenimiento de sistemas ERP, implementando mejoras de rendimiento y solución de problemas de alta prioridad."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Facultad de Ingenieria Mecanica y Electrica",
+      "url": "https://www.fime.uanl.mx/",
+      "area": "Ingeniero Administrador de Sistemas",
+      "studyType": "Bachelor",
+      "startDate": "2016-06-01",
+      "endDate": "2021-06-01",
+      "score": "8.0",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "SQL Server",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "B1 - Intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "name": "sunrey",
+      "isActive": false,
+      "description": "Landing page informativa para captar clientes de instalación y mantenimiento de equipos solares.",
+      "highlights": [
+        "Landing page", "Angular", "PHP"
+      ],
+      "url": "https://sunrey.com.mx"
+    }
+    
+  ]
+}
