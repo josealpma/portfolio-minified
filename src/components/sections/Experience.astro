@@ -1,0 +1,52 @@
+---
+import Section from "../Section.astro"
+
+import { work } from "cv_es.json"
+---
+
+<Section title="Experiencia laboral">
+  <ul >
+    {
+      work.map(
+        ({ name, startDate, endDate, position, summary, highlights, url }) => {
+          const startYear = new Date(startDate).getFullYear()
+          const endYear =
+            endDate != null ? new Date(endDate).getFullYear() : "Actual"
+
+          return (
+            <li >
+              <article>
+                <header class="flex justify-between">
+                  <div>
+                    <h3 class="font-medium">
+                      <a href={url} title={`Ver ${name}`} target="_blank"> {name}</a>  |  <span class="text-sm text-gray-500">{position}</span>
+                    </h3>
+                    <h4 ></h4>
+                  </div>
+
+                  <div class="text-sm text-gray-500">
+                    <time 
+                      datetime={startDate}
+                      data-title={startDate}>
+                        {startYear}
+                    </time>
+                    {" - "}
+                    <time 
+                      datetime={endDate}
+                      data-title={endDate}>
+                        {endYear}
+                    </time>
+                  </div>
+                </header>
+
+                <footer>
+                  <p>{summary}</p>
+                </footer>
+              </article>
+            </li>
+          )
+        }
+      )
+    }
+  </ul>
+</Section>

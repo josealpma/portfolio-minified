@@ -1,17 +1,24 @@
 ---
+import About from '@/components/sections/About.astro';
 import Me from '../components/sections/Me.astro';
 import Layout from '../layouts/Layout.astro';
+import Education from '@/components/sections/Education.astro';
+import Experience from '@/components/sections/Experience.astro';
+import Projects from '@/components/sections/Projects.astro';
 ---
 
 <Layout title="Portafolio mini">
 	<main>
 		<Me />
+		<About />
+		<Experience />
+		<Education />
+		<Projects />
 	</main>
 </Layout>
 
 <style>
 	main {
-		border: 1px solid #ff758c;
 		width: 60%; /* Toma el 40% del ancho de la pantalla */
 		margin: 0 auto; /* Centra horizontalmente */
 		padding: 2.5em; /* Espaciado interno */

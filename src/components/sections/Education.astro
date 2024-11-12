@@ -1,0 +1,39 @@
+---
+import Section from "../Section.astro"
+
+import { education } from "cv_es.json"
+---
+
+<Section title="Educación">
+  <ul>
+    {
+      education.map(({ institution, startDate, endDate, area }) => {
+        const startYear = new Date(startDate).getFullYear()
+        const endYear =
+          endDate != null ? new Date(endDate).getFullYear() : "Actual"
+        const years = `${startYear} - ${endYear}`
+
+        return (
+          <li>
+            <article>
+              <header class="flex justify-between">
+                <div>
+                  <h3>{institution}</h3>
+                </div>
+
+                <div class="text-sm text-gray-500">
+                    <time >{years}</time>
+                </div>
+              </header>
+
+              <footer>
+                <p>{area}</p>
+              </footer>
+            </article>
+          </li>
+        )
+      })
+    }
+  </ul>
+</Section>
+
