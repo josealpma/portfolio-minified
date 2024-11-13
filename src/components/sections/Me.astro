@@ -1,5 +1,7 @@
 ---
-import { basics } from "cv_es.json"
+
+const { basics } = Astro.props
+
 import Section from "@/components/Section.astro"
 import Mail from "@/icons/Mail.astro"
 import Phone from "@/icons/Phone.astro"
@@ -17,7 +19,7 @@ const SOCIAL_ICONS: any = {
   X,
 }
 
-const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
+const linkedInfo = profiles.find((profile: any) => profile.network === "LinkedIn");
 const linkedUrl = linkedInfo?.url
 
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
@@ -65,7 +67,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
           )
         }
         {
-          profiles.map(({ network, url, username }) => {
+          profiles.map(( { network, url, username }: any ) => {
             const Icon = SOCIAL_ICONS[network]
 
             return (
@@ -82,8 +84,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
         }
       </footer>
     </div>
-    <aside>
-      <img src={image} alt={name} class="w-32 rounded-2xl">
-    </aside>
+   
   
 </Section>

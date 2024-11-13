@@ -1,5 +1,5 @@
 ---
-import { basics } from "cv_es.json"
+import { basics } from "cv_en.json"
 
 interface Props {
   title: string
@@ -18,7 +18,7 @@ const { image, summary, url } = basics
     <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" as="image" href={image} />
+    <link rel="preload" as="image"  />
 
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />

@@ -1,20 +1,21 @@
 ---
+const { work } = Astro.props
+
 import Section from "../Section.astro"
 
-import { work } from "cv_es.json"
 ---
 
 <Section title="Experiencia laboral">
   <ul >
     {
       work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url }) => {
+        ({ name, startDate, endDate, position, summary, highlights, url }: any) => {
           const startYear = new Date(startDate).getFullYear()
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Actual"
 
           return (
-            <li >
+            <li class=" mt-3">
               <article>
                 <header class="flex justify-between">
                   <div>

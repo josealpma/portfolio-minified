@@ -1,14 +1,13 @@
 ---
-import GitHub from "@/icons/GitHub.astro"
+const { projects } = Astro.props
 import Section from "../Section.astro"
 
-import { projects } from "cv_es.json"
 import Chip from '@/components/Chip.astro';
 ---
 
 <Section title="Proyectos">
-    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {projects.map(({ url, description, highlights, name, isActive }) => {
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-3">
+        {projects.map(({ url, description, highlights, name, isActive }:any) => {
           return (
             <li class="border border-gray-300 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
               <article>
@@ -22,7 +21,7 @@ import Chip from '@/components/Chip.astro';
                   <p class="text-gray-600">{description}</p>
                 </header>
                 <footer class="mt-4 flex flex-wrap gap-2">
-                  {highlights.map((highlight) => {
+                  {highlights.map((highlight: any) => {
                     return <Chip text={highlight}></Chip>
                   })}
                 </footer>

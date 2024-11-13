@@ -1,0 +1,61 @@
+---
+
+import About from '@/components/sections/About.astro';
+import Me from '../components/sections/Me.astro';
+import Layout from '../layouts/Layout.astro';
+import Education from '@/components/sections/Education.astro';
+import Experience from '@/components/sections/Experience.astro';
+import Projects from '@/components/sections/Projects.astro';
+
+
+export async function getStaticPaths() {
+  // Define los idiomas soportados
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+  ];
+}
+
+import { basics, work, education, skills, languages, projects } from "cv_en.json"
+
+---
+
+<Layout title="Portfolio.min">
+	<main>
+		<Me basics={basics}/>
+		<About summary={basics.summary}/>
+		<Experience work={work}/>
+		<Education education={education}/>
+		<Projects projects={projects}=/>
+	</main>
+</Layout>
+
+<style>
+	main {
+		width: 60%; /* Toma el 40% del ancho de la pantalla */
+		margin: 0 auto; /* Centra horizontalmente */
+		padding: 2.5em; /* Espaciado interno */
+		box-sizing: border-box;
+	}
+
+	/* Media queries para adaptabilidad */
+	@media (max-width: 1200px) {
+		.container {
+			width: 60%; /* Ajusta el ancho a 50% en pantallas medianas */
+		}
+	}
+
+	@media (max-width: 768px) {
+		main {
+			width: 80%; /* Ajusta el ancho a 70% en pantallas pequeñas */
+			padding: .5em; /* Reduce el padding */
+		}
+	}
+
+	@media (max-width: 480px) {
+		main {
+			width: 95%; /* Ajusta el ancho a 90% en pantallas muy pequeñas */
+			padding: .5em;  /* Reduce aún más el padding */
+		}
+	}
+</style>

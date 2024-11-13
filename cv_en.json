@@ -1,0 +1,187 @@
+{
+  "basics": {
+    "name": "Jose Alejandro Ponce Maya",
+    "label": "Software Developer",
+    "image": "/me.webp",
+    "email": "joseal.pma@gmail.com",
+    "phone": "+528133957004",
+    "url": "",
+    "summary": "+3 years of experience as a Software Developer, currently focused on web technology development. My experience in programming and problem-solving enables me to deliver quality results and ensure project success. Experienced in working with agile methodologies such as Scrum and using collaboration tools like Jira and Slack.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Monterrey",
+      "countryCode": "MX",
+      "region": "Mexico"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "joseponcema",
+        "url": "https://linkedin.com/in/joseponcema"
+      },
+      {
+        "network": "GitHub",
+        "username": "josealpma",
+        "url": "https://github.com/josealpma"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Innatos Systems Group",
+      "position": "Software Developer",
+      "url": "https://innatos.com.mx/",
+      "startDate": "2021-04-01",
+      "endDate": null,
+      "summary": "Comprehensive development of web and mobile applications in ASP.NET, .NET Core, Ionic, and Angular, with SQL Server database management.",
+      "highlights": [
+        "Responsible for developing and implementing complete solutions in ASP.NET and .NET Core, ensuring application stability and scalability.",
+        "Improved database efficiency by 30% through SQL query optimization.",
+        "Collaborated with design teams to improve UI/UX by 20%."
+      ]
+    },
+    {
+      "name": "EISEI Innovation",
+      "position": "Junior Software Developer",
+      "url": "https://www.eisei.net.mx/",
+      "startDate": "2020-06-01",
+      "endDate": "2020-12-01",
+      "summary": "Development of MVC web applications with PHP and Yii 2.0, MySQL database management, ERP project maintenance, and version control using GIT.",
+      "highlights": [
+        "Contributed to the development and maintenance of ERP systems, implementing performance improvements and resolving high-priority issues."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Faculty of Mechanical and Electrical Engineering",
+      "url": "https://www.fime.uanl.mx/",
+      "area": "Systems Management Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2016-06-01",
+      "endDate": "2021-06-01",
+      "score": "8.0",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "JavaScript",
+        "Server"
+      ]
+    },
+    {
+      "name": "SQL Server",
+      "level": "Advanced",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Advanced",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "B1 - Intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "name": "sunrey",
+      "isActive": false,
+      "description": "Informative landing page to attract solar installation and maintenance clients.",
+      "highlights": [
+        "Landing page", "Angular", "PHP"
+      ],
+      "url": "https://sunrey.com.mx"
+    }
+  ]
+}
