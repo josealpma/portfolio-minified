@@ -5,18 +5,24 @@ import Layout from '../layouts/Layout.astro';
 import Education from '@/components/sections/Education.astro';
 import Experience from '@/components/sections/Experience.astro';
 import Projects from '@/components/sections/Projects.astro';
+
+import { basics, work, education, projects} from "cv_en.json" 
+import Language from '@/components/Language.astro';
+
 ---
 
-<Layout title="Portafolio mini">
+<Layout title="Portfolio.min">
 	<main>
-		<Me />
-		<About />
-		<Experience />
-		<Education />
-		<Projects />
+		<Me basics={basics}/>
+		<About summary={basics.summary}/>
+		<Experience work={work}/>
+		<Education education={education}/>
+		<Projects projects={projects}=/>
+
+		<Language />
+
 	</main>
 </Layout>
-
 <style>
 	main {
 		width: 60%; /* Toma el 40% del ancho de la pantalla */

@@ -6,6 +6,7 @@ import Layout from '../layouts/Layout.astro';
 import Education from '@/components/sections/Education.astro';
 import Experience from '@/components/sections/Experience.astro';
 import Projects from '@/components/sections/Projects.astro';
+import Language from '@/components/Language.astro';
 
 
 export async function getStaticPaths() {
@@ -29,12 +30,17 @@ const { basics, work, education, projects } = data;
 
 <Layout title="Portfolio.min">
 	<main>
+		<Language />
+
 		<Me basics={basics}/>
 		<About summary={basics.summary}/>
 		<Experience work={work}/>
 		<Education education={education}/>
 		<Projects projects={projects}=/>
+
+
 	</main>
+
 </Layout>
 
 <style>
