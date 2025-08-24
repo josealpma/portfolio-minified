@@ -6,7 +6,7 @@ import Chip from '@/components/Chip.astro';
 ---
 
 <Section title={title}>
-    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-3">
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-3 mb-5">
         {projects.map(({ url, description, highlights, name, isActive, show }:any) => {
           return (
             show &&

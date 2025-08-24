@@ -5,12 +5,11 @@ const { basics } = Astro.props
 import Section from "@/components/Section.astro"
 import Mail from "@/icons/Mail.astro"
 import Phone from "@/icons/Phone.astro"
-import X from "@/icons/X.astro"
 import LinkedIn from "@/icons/LinkedIn.astro"
 import GitHub from "@/icons/GitHub.astro"
 import WorldMap from "@/icons/WorldMap.astro"
 
-const { name, label, image, location, profiles, phone, email, highlights } = basics
+const { name, label, image, location, profiles, phone, email, freelance } = basics
 const { city, region } = location
 
 const SOCIAL_ICONS: any = {
@@ -27,12 +26,12 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 <Section>
   <div class="grid grid-cols-1 md:grid-cols-1 gap-4 place-content-between">
     <div >
-      <h1 class="text-3xl font-semibold ">{name}</h1>
-      <h2 class="">{label}</h2>
+      <h1 class="text-3xl font-semibold ">{name}  </h1> 
+      <h2 class="">{label} </h2>
       <p class="flex items-center justify-start text-sm text-gray-600 mb-2">
         <WorldMap />
         <span class="mx-2">
-          {city}, {region}
+          {city}, {region} { <span class={freelance ? "text-green-500 ml-2": "text-gray-500 ml-2 text-lg"} >•</span> } <small class="text-xs text-gray-500">Freelance</small> 
         </span>
       </p>
       
