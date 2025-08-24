@@ -1,19 +1,20 @@
 ---
-const { projects } = Astro.props
+const { projects, title} = Astro.props
 import Section from "../Section.astro"
 
 import Chip from '@/components/Chip.astro';
 ---
 
-<Section title="Proyectos">
+<Section title={title}>
     <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-3">
-        {projects.map(({ url, description, highlights, name, isActive }:any) => {
+        {projects.map(({ url, description, highlights, name, isActive, show }:any) => {
           return (
+            show &&
             <li class="border border-gray-300 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
               <article>
                 <header>
                   <h3 class="text-lg font-semibold mb-2">
-                    <a href={url} target="_blank" title={`Ver el proyecto ${name}`} class="text-grey-500 hover:underline">
+                    <a href={url} target="_blank" title={` ${name}`} class="text-grey-500 hover:underline">
                       {name}
                     </a>
                     {isActive && <span class="text-green-500 ml-2">•</span>}

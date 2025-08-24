@@ -5,24 +5,32 @@ import Layout from '../layouts/Layout.astro';
 import Education from '@/components/sections/Education.astro';
 import Experience from '@/components/sections/Experience.astro';
 import Projects from '@/components/sections/Projects.astro';
+import Highlights from '@/components/sections/Highlights.astro';
 
-import { basics, work, education, projects} from "cv_en.json" 
+
+import { basics, work, education, projects, titles, skills, highlights} from "cv_en.json" 
 import Language from '@/components/Language.astro';
+import Skills from '@/components/sections/Skills.astro';
 
 ---
 
-<Layout title="Portfolio.min">
+<Layout title="portfolio.min">
 	<section id="language" class="flex justify-end">
 		<Language />
 	</section>
 	
 	<main>
 		<Me basics={basics}/>
-		<About summary={basics.summary}/>
-		<Experience work={work}/>
-		<Education education={education}/>
-		<Projects projects={projects}=/>
-
+		<Highlights highlights={highlights}/>
+		<About summary={basics.summary} title={titles.about}/>
+		<Experience work={work} title={titles.work}/>
+		<Education education={education} title={titles.education}/>
+		<Skills skills={skills} title={titles.skills}/>
+		<Projects projects={projects} title={titles.projects}/>
+		<footer>
+			<p class="text-center text-sm text-gray-500 mt-6 mb-3"> © {new Date().getFullYear()} portfolio.min <br>
+				 Modified with <a href="https://astro.build/">🚀</a> by A. Ponce | Design inspiration on  <a class="text-cyan-600" href="https://github.com/BartoszJarocki/cv">[BartoszJarocki]</a></p>
+		</footer>
 	</main>
 </Layout>
 <style>

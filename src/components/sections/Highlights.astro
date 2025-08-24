@@ -1,0 +1,27 @@
+---
+
+const { highlights } = Astro.props
+
+import Section from "@/components/Section.astro"
+
+---
+
+<Section>
+  
+     <div class="grid grid-cols-1 md:grid-cols-1 gap-4 place-content-between">
+        <ul class="grid grid-cols-3 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-2 lg:grid-cols-3 gap-4 mt-3">  
+          {
+            highlights.map((highlight: any) => (
+              <li class="rounded-lg p-4 transition-shadow text-start">
+                <span class="text-xl font-semibold mb-2">
+                   {highlight.qty}
+                </span>
+                <br>
+                {highlight.description}
+              </li>
+            ))
+          }
+        </ul>
+    </div>
+  
+</Section>
