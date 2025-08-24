@@ -1,54 +1,25 @@
-# Astro Starter Kit: Basics
+# 🌐 Portafolio Personal 
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este es mi portafolio web, creado con **Astro** y, donde muestro mi experiencia, proyectos y habilidades como **Desarrollador de Software**. He tomado la inspiracion del proyecto de [BartoszJarocki](https://github.com/BartoszJarocki/cv) el cual tiene la estructura y diseño original.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Tecnologías principales
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Astro** – Framework estático para sitios rápidos y modernos.  
+- **TailwindCSS** – Estilos responsivos y diseño moderno.  
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-## 🚀 Project Structure
+## 🖼️ Secciones del sitio
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Sobre mi**: Presentación personal y breve resumen de quién soy.  
+- **Highlights**: Resumen en tres partes destacadas de mi carrera como desarrollador.
+- **Experiencia de trabajo**: Resumen de actividades principales en mis lugares de trabajo.  
+- **Habilidades**: Tecnologías agrupadas por categorías (Frontend, Backend, Bases de Datos, Mobile, Herramientas).
+- **Proyectos**: Showcase de proyectos destacados con links y descripciones. 
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## ⚡ Características adicionales
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- Agregado switch de idioma basado en static paths
+- Agregados highlights de informacion no curricular.
+- Se ha cambiado el diseño de los skills, solo agregando iconos.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
