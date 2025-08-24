@@ -1,13 +1,13 @@
 {
   "basics": {
     "fullname": "Jose Alejandro Ponce Maya",
-    "name": "Jose Alejandro Ponce Maya",
+    "name": "Alejandro Ponce",
     "label": "Desarrollador de software",
     "image": "/me.jpg",
     "email": "joseal.pma@gmail.com",
     "phone": "+528133957004",
     "url": "",
-    "summary": "+3 años de experiencia como Desarrollador de software. Actualmente me encuentro enfocado en el desarrollo de tecnologías web. Mi experiencia en programación y resolución de problemas me permite ofrecer resultados de calidad y garantizar el éxito de los proyectos. Experiencia trabajando con metodologías ágiles como Scrum y utilizando herramientas de colaboración como Jira y Slack.",
+    "summary": "Soy desarrollador de software especializado en desarrollo web. Mi experiencia en programación y resolución de problemas me permite construir proyectos sólidos y bien estructurados. Trabajo con metodologías ágiles como Scrum y utilizo herramientas como Jira y Slack para colaborar en equipo.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -18,8 +18,8 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "joseponcema",
-        "url": "https://linkedin.com/in/joseponcema"
+        "username": "aponcedev",
+        "url": "https://linkedin.com/in/aponcedev"
       },
       {
         "network": "GitHub",
@@ -67,27 +67,27 @@
   ],
   "skills": [
     {
-      "name": "HTML",
+      "name": "Ionic",
+      "icon": "devicon-ionic-original",
       "level": "Master",
       "keywords": [
-        "Desarrollo Web",
-        "Frontend"
+        "Frontend",
+        "Mobile"
       ]
     },
     {
-      "name": "CSS",
+      "name": "C#",
+      "icon": "devicon-csharp-plain",
       "level": "Master",
       "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Diseño Responsive"
+        "Backend"
       ]
     },
     {
       "name": "JavaScript",
+      "icon": "devicon-javascript-plain",
       "level": "Master",
       "keywords": [
-        "Desarrollo Web",
         "Frontend",
         "Backend",
         "Fullstack"
@@ -95,71 +95,52 @@
     },
     {
       "name": "TypeScript",
+      "icon": "devicon-typescript-plain",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web",
         "Frontend",
-        "Backend",
-        "JavaScript Superset"
+        "Backend"
       ]
     },
     {
       "name": "Node",
+      "icon": "devicon-nodejs-plain",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web",
-        "Backend",
-        "JavaScript",
-        "Servidor"
+        "Backend"
       ]
     },
     {
       "name": "SQL Server",
+      "icon": "devicon-microsoftsqlserver-plain",
       "level": "Avanzado",
       "keywords": [
         "Bases de Datos",
-        "SQL",
-        "Almacenamiento de Datos",
         "Backend"
       ]
     },
     {
       "name": "Git",
+      "icon": "devicon-git-plain",
       "level": "Avanzado",
       "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente",
-        "Git"
+        "Herramientas"
       ]
     },
     {
       "name": "React",
+      "icon": "devicon-react-original",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
+        "Frontend"
       ]
     },
     {
       "name": "Angular",
+      "icon": "devicon-angularjs-plain",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
+        "Frontend"
       ]
     }
   ],
@@ -177,12 +158,47 @@
     {
       "name": "sunrey",
       "isActive": false,
+      "show": false,
       "description": "Landing page informativa para captar clientes de instalación y mantenimiento de equipos solares.",
       "highlights": [
-        "Landing page", "Angular", "PHP"
+        "Landing page",
+        "Angular",
+        "PHP"
       ],
       "url": "https://sunrey.mx"
+    },
+    {
+      "name": "DBF Extraction Tool",
+      "isActive": true,
+      "show": true,
+      "description": "Una herramienta para extraer y convertir archivos DBF a formato CSV o Esquema SQL, facilitando el manejo y análisis de datos.",
+      "highlights": [
+        "Python",
+        "SQL"
+      ],
+      "url": ""
     }
-    
-  ]
+  ],
+  "highlights": [
+    {
+      "description": "años de experiencia.",
+      "qty": "+4"
+    },
+    {
+      "description": "pasión entregada.",
+      "qty": "100%"
+    },
+    {
+      "description": "café consumido.",
+      "qty": "∞"
+    }
+  ],
+  "titles": {
+    "about": "Sobre mí",
+    "work": "Experiencia Laboral",
+    "education": "Educación",
+    "skills": "Habilidades",
+    "languages": "Idiomas",
+    "projects": "Proyectos"
+  }
 }
