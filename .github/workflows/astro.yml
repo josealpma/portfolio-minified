@@ -14,8 +14,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            cd /home/${{ secrets.USERNAME }}/portfolio || git clone https://github.com/josealpma/portfolio-minified.git /home/${{ secrets.USERNAME }}/portfolio
-            cd /home/${{ secrets.USERNAME }}/portfolio
+            cd /var/www/portfolio || git clone https://github.com/josealpma/portfolio-minified.git /var/www/portfolio
+            cd /var/www/portfolio
             git pull origin main
             npm install
             npm run build
