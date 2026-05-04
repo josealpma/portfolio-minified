@@ -12,13 +12,28 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.SSH_KEY }} 
           script: |
-            cd /var/www/portfolio || git clone https://github.com/josealpma/portfolio-minified.git /var/www/portfolio
-            cd /var/www/portfolio
-            git pull origin main
+            # 1. Asegurar que el directorio existe y tenemos permisos
+            # Intentamos entrar, si no existe, clonamos el repo
+            [ -d "/var/www/portfolio" ] || git clone https://github.com/josealpma/portfolio-minified.git /var/www/portfolio
+            cd /var/www/portfolio || exit
+
+            # 2. Actualizar el código
+            # Forzamos el pull para evitar conflictos de archivos locales
+            git fetch --all
+            git reset --hard origin/main
+            
+            # 3. Instalación de dependencias y Build
+            # Usamos npm install para asegurar que todas las librerías de Astro estén listas
             npm install
             npm run build
-            # Servir con PM2 (ajusta el puerto si es necesario)
+
+            # 4. Gestión con PM2
+            # Detenemos el proceso anterior si existe y lanzamos el nuevo servidor
+            # La opción -s es para Single Page Apps y -l especifica el puerto 3000
             pm2 delete portfolio || true
             pm2 start "npx serve -s dist -l 3000" --name "portfolio"
+            
+            # Guardar la configuración para que sobreviva a reinicios del VPS
+            pm2 save
